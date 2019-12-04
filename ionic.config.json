@@ -1,0 +1,7 @@
+{
+  "name": "medsenac",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

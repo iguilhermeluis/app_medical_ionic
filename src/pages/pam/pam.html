@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-navbar color="rosa">
+    <ion-title>PRESSÃO ARTERIAL MÉDIA</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <p style="text-align: center">
+    <img src="/assets/imgs/avaliacao_medica.svg" />
+  </p>
+
+  <ion-list inset>
+    <ion-item>
+      <ion-label floating>Pressão arterial sistolica</ion-label>
+      <ion-input type="tel" [(ngModel)]="pas"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Pressão arterial diastólica</ion-label>
+      <ion-input type="tel" [(ngModel)]="pad"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label fixed>Resultado</ion-label>
+      <ion-input type="text" readonly [(ngModel)]="pam"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <button
+        id="btnCalcular"
+        ion-button
+        color="dark"
+        full
+        (click)="calcular()"
+      >
+        Calcular
+      </button>
+    </ion-item>
+  </ion-list>
+</ion-content>

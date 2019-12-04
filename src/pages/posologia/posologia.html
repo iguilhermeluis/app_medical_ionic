@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar color="azul">
+    <ion-title>TABELA DE POSOLOGIAS</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <p style="text-align: center">
+    <img src="/assets/imgs/icone-coracao.svg" />
+  </p>
+  <ion-list inset>
+    <ion-item>
+      <ion-label>Horário</ion-label>
+      <ion-select [(ngModel)]="horario" okText="Okay" cancelText="Fechar">
+        <ion-option value="3">3/3 horas</ion-option>
+        <ion-option value="4">4/4 horas</ion-option>
+        <ion-option value="6">6/6 horas</ion-option>
+        <ion-option value="8">8/8 horas</ion-option>
+        <ion-option value="12">12/12 horas</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+  <div *ngIf="horario == 3">tabela 3/3</div>
+  <div *ngIf="horario == 4">tabela 4/4</div>
+  <div *ngIf="horario == 6">tabela 6/6</div>
+  <div *ngIf="horario == 8">tabela 8/8</div>
+  <div *ngIf="horario == 12">tabela 12/12</div>
+</ion-content>

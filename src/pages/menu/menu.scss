@@ -1,0 +1,22 @@
+page-menu {
+  .menu-item {
+    min-height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+  }
+  .item1 {
+    background: #ff748e;
+  }
+  .item2 {
+    background: #01c6b2;
+  }
+  .item3 {
+    background: #0c96c5;
+  }
+  .item4 {
+    background: #cb003f;
+  }
+}
