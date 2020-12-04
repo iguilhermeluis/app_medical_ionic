@@ -1,4 +1,4 @@
-<img src="screenshots.png" alt="Screenshots" align="center" />
+<img src="screenshots.jpg" alt="Screenshots" align="center" />
 
 <br/>
 <div align="center">
